@@ -23,7 +23,8 @@
 
   <div class="field">
     <%= form.label :image %>
-    <%= form.text_field :image, id: :product_image %>
+    <%#= form.text_field :image, id: :product_image %>
+    <%= form.select :image, ['iphone.jpg', 'samsung.png']%>
   </div>
 
   <div class="actions">
