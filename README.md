@@ -21,4 +21,16 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+# when website running then usage as below
+
+* A user can register as a normal user
+
+* A user can browse products on this website
+
+* A user can choose to purchase premium membership
+
+* A premium member can see products with discount prices
+
+* A user can be set as admin
+
+* An admin can create/edit products on this website
