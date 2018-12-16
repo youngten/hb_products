@@ -12,7 +12,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @product.image %>
+  <%= image_tag(@product.image) %>
 </p>
 
 <% if current_user && current_user.role == 'admin' %>

@@ -1,11 +1,18 @@
 class ProductsController < ApplicationController
 
-  before_action :is_admin?, only: [:edit, :update, :destroy]
+  before_action :is_admin?, only: [:new, :create, :edit, :update, :destroy]
   before_action :set_product, only: [:show]
 
   def is_admin?
     if current_user && current_user.role == 'admin'
-      set_product
+      case action_name
+        when 'new'
+          new
+        when 'create'
+          create
+        else
+          set_product
+      end
     else
       render plain: 'not authorized error'
     end
